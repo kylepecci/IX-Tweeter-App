@@ -53,6 +53,9 @@ Go ahead and click "ADD A SERVICE".
 
 You should now see instructions on how to add a prisma service. If you have not done so already, run `npm install -g prisma` to install prisma globally on your machine.
 
+Use your arrow keys and pick "Demo Server".
+
+
 In the second box you should see a `prisma login` command that you should copy. Go ahead and copy that command and paste it in your terminal to login:
 
 Here's what that process looks like: 
