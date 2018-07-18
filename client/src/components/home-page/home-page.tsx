@@ -1,20 +1,21 @@
-import * as React from 'react';
-import logo from './logo.svg';
+import * as React from "react"
+// import logo from "./logo.svg"
+import Head from "../head/head"
+import Feed from "../Feed/feed"
 
-class HomePage extends React.Component {
-  public render() {
+interface Props {
+  history: any
+}
+
+class HomePage extends React.Component<Props> {
+  render() {
     return (
       <div>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <Head history={this.props.history} />
+        <Feed history={this.props.history} />
       </div>
-    );
+    )
   }
 }
 
-export default HomePage;
+export default HomePage

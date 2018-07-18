@@ -1,4 +1,4 @@
-# ix-twatter
+# ix-tweeter
 
 <p align="center">
   <img src="screens/3251932690_21d32c07e9_o.png" alt="Bundle Analyzer example">

@@ -1,0 +1,93 @@
+.showTweet {
+  position: relative;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  border-style: solid;
+  width: 55%;
+  margin-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 110px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.userIcon {
+  height: 15px;
+  width: auto;
+  margin-right: 5px;
+}
+.text {
+  display: absolute;
+  text-align: left;
+  margin-left: 65px;
+  margin-top: 10px;
+}
+
+.tweet-author {
+  display: absolute;
+  background-color: #e8f5fd;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 5px;
+  padding: 4px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.showTweetExpanded {
+  position: relative;
+  top: 200px;
+  border-width: 2px;
+  border-color: black;
+  border-style: groove;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  background-color: white;
+}
+
+.bckgrnExpanded {
+  position: fixed;
+  float: center;
+  width: 100%;
+  height: 1000px;
+  /* margin-top: 0px; */
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0px;
+  z-index: 10000;
+}
+
+.userIconExpanded {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.textExpanded {
+  display: absolute;
+  text-align: left;
+  margin-left: 90px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.tweet-author-expanded {
+  display: absolute;
+  background-color: #e8f5fd;
+  text-align: left;
+  margin-left: 30px;
+  padding: 4px;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 20px;
+}
+
+.exitBtn {
+  position: relative;
+  right: -48%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}

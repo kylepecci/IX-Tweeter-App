@@ -2,11 +2,25 @@
 
 type Query {
   me: User
+  feed(orderBy: String): [Tweet]
+  tweet(id: ID!): Tweet
+  findUser(username: String!): User
+  feedForUser(orderBy: String, username: String): [Tweet]
+  myFeed(orderBy: String, email: String): [Tweet]
 }
 
 type Mutation {
-  signup(email: String!, password: String!, name: String!): AuthPayload!
+  signup(
+    email: String!
+    password: String!
+    username: String!
+    name: String!
+  ): AuthPayload!
   login(email: String!, password: String!): AuthPayload!
+  createTweet(text: String!): Tweet!
+  addUserName(email: String!, username: String!): User
+
+  # uploadProfPic(email: String!, pic: String!): User!
 }
 
 type AuthPayload {
@@ -14,9 +28,22 @@ type AuthPayload {
   user: User!
 }
 
+type Feed {
+  author: User!
+  tweets: [Tweet!]!
+}
+
+type Tweet {
+  id: ID!
+  text: String!
+  author: User!
+}
+
 type User {
   id: ID!
   email: String!
+  username: String!
   name: String!
   tweets: [Tweet!]!
+  picture: String
 }
